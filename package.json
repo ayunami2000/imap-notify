@@ -1,6 +1,6 @@
 {
   "name": "@gyula-ny/imap-notify",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Listens for and fetches new email messages",
   "keyworkds": [
     "imap",
@@ -30,8 +30,8 @@
     "sinon": "4.4.5"
   },
   "dependencies": {
+    "debug": "^4.1.1",
     "imap": "~0.8.14",
-    "istanbul": "^0.4.5",
     "lodash": "4.17.15",
     "mailparser": "2.7.1",
     "moment": "2.24.0"
