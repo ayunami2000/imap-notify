@@ -5,8 +5,7 @@
 /*jshint quotmark: false*/
 
 describe('imap-notify', function() {
-  var
-    proxyquire = require('proxyquire'),
+  var proxyquire = require('proxyquire'),
     EventEmitter = require('events').EventEmitter,
     MailParser = require('mailparser').MailParser,
     _ = require('lodash'),
@@ -15,7 +14,6 @@ describe('imap-notify', function() {
     should = require('should');
 
   beforeEach(function() {
-
     fetchInstanceStub = {
       on: sinon.stub(),
       once: sinon.stub(),
@@ -56,7 +54,7 @@ describe('imap-notify', function() {
     stubMoment.subtract.returns(stubMoment);
     stubMoment.toDate.returns('date');
 
-    momentStub = function(){
+    momentStub = function() {
       return stubMoment;
     };
 
@@ -64,16 +62,10 @@ describe('imap-notify', function() {
       imap: imapStub,
       moment: momentStub
     });
-
   });
 
   describe('imapNotify()', function() {
-    var
-      notifier,
-      eventEmitStub,
-      imapnotify,
-      imapConfigs,
-      opts;
+    var notifier, eventEmitStub, imapnotify, imapConfigs, opts;
 
     beforeEach(function() {
       imapConfigs = {
@@ -97,7 +89,6 @@ describe('imap-notify', function() {
         tls: true,
         box: 'Inbox'
       };
-
 
       notifier = imapNotify(opts);
 
@@ -179,9 +170,7 @@ describe('imap-notify', function() {
     });
 
     describe('fetchNewMsgs()', function() {
-      var
-        chainStub,
-        lodashStub;
+      var chainStub, lodashStub;
 
       beforeEach(function() {
         lodashStub = {
@@ -195,7 +184,6 @@ describe('imap-notify', function() {
         lodashStub.sortByAll.returns(lodashStub);
         lodashStub.slice.returns(lodashStub);
         lodashStub.value.returns(['uids']);
-
       });
 
       afterEach(function() {
@@ -224,12 +212,6 @@ describe('imap-notify', function() {
         chainStub.lastCall.calledWith('uids').should.be.ok;
       });
 
-      it('should call sortByAll', function() {
-        imapInstanceStub.on.args[2][1](42);
-        imapInstanceStub.search.lastCall.args[1](null, 'uids');
-        lodashStub.sortByAll.callCount.should.eql(1);
-      });
-
       it('should call slice with correct params', function() {
         imapInstanceStub.on.args[2][1](1);
         imapInstanceStub.search.lastCall.args[1](null, ['uids', 'uids']);
@@ -242,11 +224,7 @@ describe('imap-notify', function() {
         lodashStub.value.callCount.should.eql(1);
       });
     });
-
   });
 
-  describe('fetch()', function() {
-
-  });
-
+  describe('fetch()', function() {});
 });
