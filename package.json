@@ -1,6 +1,6 @@
 {
-  "name": "imap-notify",
-  "version": "1.0.0",
+  "name": "@gyula-ny/imap-notify",
+  "version": "1.1.0",
   "description": "Listens for and fetches new email messages",
   "keyworkds": [
     "imap",
@@ -9,9 +9,12 @@
     "sync"
   ],
   "author": "Dennis Coyle <dennis@coyle.io>",
+  "contributors": [
+    "Gyula Nyirfalvi <gyula@nyirfalvi.hu>"
+  ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/coyle/imap-notify.git"
+    "url": "git://github.com/gyula-ny/imap-notify.git"
   },
   "license": "MIT",
   "main": "lib/imap-notify",
@@ -32,5 +35,8 @@
     "lodash": "4.17.15",
     "mailparser": "2.7.1",
     "moment": "2.24.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
