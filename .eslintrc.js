@@ -1,0 +1,46 @@
+module.exports = {
+  env: {
+    node: true,
+    commonjs: true,
+    es2020: true,
+    mocha: true
+  },
+  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+  plugins: ['prettier'],
+  rules: {
+    'block-scoped-var': ['error'],
+    curly: 'error',
+    'default-case': 'error',
+    eqeqeq: 'error',
+    'no-else-return': 'error',
+    'no-eq-null': 'error',
+    'no-extend-native': 'error',
+    'no-extra-bind': 'error',
+    'no-global-assign': 'error',
+    'no-labels': 'error',
+    'no-lone-blocks': 'error',
+    'no-loop-func': 'error',
+    'no-param-reassign': 'error',
+    'no-return-assign': 'error',
+    'no-throw-literal': 'error',
+    'no-unused-expressions': 'error',
+    'no-useless-call': 'error',
+    radix: 'error',
+    'require-await': 'error',
+    'require-unicode-regexp': 'error',
+    'callback-return': 'error',
+    'global-require': 'error',
+    'handle-callback-err': 'error',
+
+    'no-confusing-arrow': 'error',
+    'no-const-assign': 'error',
+    'no-var': 'error',
+    'prefer-const': 'error',
+    'prefer-arrow-callback': 'error',
+    'object-shorthand': 'error',
+    'prefer-destructuring': 'error',
+    'prefer-rest-params': 'error',
+    'prefer-template': 'error',
+    'prettier/prettier': ['error']
+  }
+};
