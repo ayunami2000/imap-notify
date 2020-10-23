@@ -1,5 +1,5 @@
 {
-  "name": "@gyula-ny/imap-notify",
+  "name": "@ayunami2000/imap-notify",
   "version": "1.3.0",
   "description": "Listens for and fetches new email messages",
   "keyworkds": [
@@ -10,11 +10,12 @@
   ],
   "author": "Dennis Coyle <dennis@coyle.io>",
   "contributors": [
-    "Gyula Nyirfalvi <gyula@nyirfalvi.hu>"
+    "Gyula Nyirfalvi <gyula@nyirfalvi.hu>",
+    "ayunami2000 (https://github.com/ayunami2000)"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/gyula-ny/imap-notify.git"
+    "url": "git://github.com/ayunami2000/imap-notify.git"
   },
   "license": "MIT",
   "main": "lib/imap-notify",
